@@ -1,22 +1,25 @@
-# create-svelte
+# German Vocabulary Learner
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A nice little personal vocabulary builder for myself, written mostly with Svelte and SvelteKit.
 
-## Creating a project
+This app is currently in development. Most functionalities are incomplete. The README file will be updated accordingly if any huge update happens.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## List of core functions:
+- Vocabulary by Chapters
+- Verb forms
+- Grammar Rules
 
-```bash
-# create a new project in the current directory
-npm init svelte
+## Vocabulary by Chapters
 
-# create a new project in my-app
-npm init svelte my-app
-```
+Start building your dictionary from here. You can record the gender articles, plural forms, and any weird rules of every word. Your vocabularies will be recorded in ``localStorage`` provided by the browsers.
 
-## Developing
+I am currently following the German textbook studio[express], so the page includes classification of vocabularies into different chapters. Choosing no chapters will place the vocabulry at the top.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Adding your own functions
+
+If you want to develop some more functionalities yourself, feel free to clone the project. 
+
+In case you don't know Svelte, to start developing, install the dependencies with `npm install` (or `pnpm install` or `yarn`), and start a development server:
 
 ```bash
 npm run dev
@@ -25,9 +28,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+To create a production version of your version:
 
 ```bash
 npm run build
