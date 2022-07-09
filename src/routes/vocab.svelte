@@ -1,40 +1,27 @@
 <script>
-  import { vocabs } from '../lib/stores'
-  vocabs.useLocalStorage();
-
-  let article = '';
-  let word = '';
-  let plural = '';
-
-  function addVocab() {
-    $vocabs.push({article, word, plural})
-    $vocabs = $vocabs;
-  }
+	import VocabAdder from '$lib/components/VocabAdder.svelte';
+	import VocabRemover from '$lib/components/VocabRemover.svelte';
+	import { vocabs } from '$lib/stores';
 </script>
 
 <main>
-  <table>
-    <tr>
-      <td>Article</td>
-      <td>Word</td>
-      <td>Plural</td>
-    </tr>
-    {#each $vocabs as vocab}
-      <tr>
-        <td>{vocab.article}</td>
-        <td>{vocab.word}</td>
-        <td>{vocab.plural}</td>
-      </tr>
-    {/each}
+	<table class="border-collapse table-fixed text-base font-serif w-full">
+		<thead class="text-white">
+			<tr>
+				<td class="border border-slate-600 w-1/6 bg-slate-400">Article</td>
+				<td class="border border-slate-600 w-1/3 bg-slate-400">Word</td>
+				<td class="border border-slate-600 w-1/3 bg-slate-400">Plural</td>
+				<td class="w-1/6" />
+			</tr>
+		</thead>
+		<tbody>
+			{#each $vocabs as _, index}
+				<VocabRemover {index} />
+			{/each}
+		</tbody>
+	</table>
 
-  </table>
+	<br /><br />
 
-  <select bind:value={article}>
-    <option value="der">der</option>
-    <option value="die">die</option>
-    <option value="das">das</option>
-  </select>
-  <input type="text" bind:value={word}>
-  <input type="text" bind:value={plural}>
-  <button on:click={addVocab}>Add Vocabulary</button>
+	<VocabAdder />
 </main>

@@ -42,7 +42,7 @@
 		height: 100%;
 		color: rgb(0, 90, 80);
 		text-decoration: none;
-		font-family: "Trebuchet MS";
+		font-family: 'Trebuchet MS';
 		font-weight: bold;
 	}
 

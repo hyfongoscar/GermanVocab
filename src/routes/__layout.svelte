@@ -1,16 +1,18 @@
 <script>
-  import Header from '../lib/header/Header.svelte';
-	import "../app.css";
+	import Header from '../lib/header/Header.svelte';
+	import '../app.css';
 </script>
 
 <Header />
 
 <main>
-  <slot />
+	<slot />
 </main>
 
 <footer>
-	<p>Visit <a href="https://potatohy.github.com">potatohy.github.com</a> for more awesome personal projects.</p>
+	<p>
+		Visit <a href="https://potatohy.github.com">potatohy.github.com</a> for more awesome personal projects.
+	</p>
 </footer>
 
 <style>
