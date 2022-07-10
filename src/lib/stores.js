@@ -22,3 +22,13 @@ const createWritableStore = (key, startValue) => {
 };
 
 export const vocabs = createWritableStore('vocabs', []);
+export const verbs = createWritableStore('verbs', []);
+export const chapters = writable([
+	'',
+	'Kaffee oder Tee?',
+	'Sprache im Kurs',
+	'Städte - Länder - Sprachen',
+	'Menschen und Häuser',
+	'Termine',
+	'Orientierung'
+]);

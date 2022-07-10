@@ -33,7 +33,7 @@
 		<td class="px-1 py-1.5 border-t-2">{vocab.translation}</td>
 	{/if}
 	{#if hover}
-		<td class="bg-purple-500 text-cyan-50 flex justify-center border border-1 rounded-full px-1">
+		<td class="bg-purple-500 text-cyan-50 flex justify-center border border-1 rounded-full px-3">
 			<button on:click={removeVocab}>Delete</button>
 		</td>
 	{/if}

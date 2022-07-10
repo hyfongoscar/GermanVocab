@@ -1,17 +1,8 @@
 <script>
 	import VocabAdder from '$lib/components/VocabAdder.svelte';
 	import VocabRemover from '$lib/components/VocabRemover.svelte';
-	import { vocabs } from '$lib/stores';
+	import { vocabs, chapters } from '$lib/stores';
 
-	let chapters = [
-		'',
-		'Tee oder Kaffee',
-		'Kommunikation im Kurs',
-		'Mensche - Kurse - Sprachen',
-		'Städte - Länder - Sprachen',
-		'Termine',
-		'Orientierung'
-	];
 	let filtered = [];
 
 	/**
@@ -32,7 +23,7 @@
 <div class="grid w-2/3">
 	<table
 		class="table-fixed border-separate border-spacing-x-1
-									text-base font-serif "
+									text-base font-serif"
 	>
 		<thead class="text-white">
 			<tr>
@@ -44,7 +35,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each chapters as title, index}
+			{#each $chapters as title, index}
 				{#if $vocabs.filter((vocab) => vocab.chapter === index).length > 0}
 					<tr>
 						<td class="font-semibold" colspan="5"
