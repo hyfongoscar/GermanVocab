@@ -1,6 +1,6 @@
 <script>
-	import { vocabs } from '../stores';
-	vocabs.useLocalStorage();
+	import { nouns } from '../stores';
+	nouns.useLocalStorage();
 
 	let article = 'der';
 	let word = '';
@@ -10,11 +10,11 @@
 
 	function addVocab() {
 		if (!word) {
-			alert('Please enter your vocabulary, at least enter the normal form. :)');
+			alert('Please enter your nounulary, at least enter the normal form. :)');
 			return;
 		}
-		$vocabs.push({ article, chapter, plural, translation, word });
-		$vocabs = $vocabs;
+		$nouns.push({ article, chapter, plural, translation, word });
+		$nouns = $nouns;
 		word = '';
 		plural = '';
 		translation = '';

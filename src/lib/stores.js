@@ -23,6 +23,7 @@ const createWritableStore = (key, startValue) => {
 
 export const vocabs = createWritableStore('vocabs', []);
 export const verbs = createWritableStore('verbs', []);
+export const nouns = createWritableStore('nouns', []);
 export const chapters = writable([
 	'',
 	'Kaffee oder Tee?',
