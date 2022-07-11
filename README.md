@@ -6,15 +6,16 @@ This app is currently in development. Most functionalities are incomplete. The R
 
 ## List of core functions:
 
-- Vocabulary by Chapters
-- Verb forms
+- Nouns with Articles
+- Verb Forms
+- Other Vocabularies
 - Grammar Rules
 
-## Vocabulary by Chapters
+## Nouns with Articles
 
-Start building your dictionary from here. You can record the gender articles, plural forms, and any weird rules of every word. Your vocabularies will be recorded in `localStorage` provided by the browsers.
+Start building your dictionary from here. You can record the gender articles, plural forms, and the english translation of every noun. Your vocabularies will be recorded in `localStorage` provided by the browsers.
 
-I am currently following the German textbook studio[express], so the page includes classification of vocabularies into different chapters. Choosing no chapters will place the vocabulry at the top.
+I am currently following the German textbook studio[express], so all pages order vocabularies by their chapters. Choosing no chapters for a vocabulary will place it at the top.
 
 ## Adding your own functions
 
