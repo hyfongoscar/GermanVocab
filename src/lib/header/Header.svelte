@@ -6,11 +6,14 @@
 	<nav>
 		<ul>
 			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.url.pathname === '/vocab'}>
-				<a sveltekit:prefetch href="/vocab">Vocabulary by Chapter</a>
+			<li class:active={$page.url.pathname === '/nouns'}>
+				<a sveltekit:prefetch href="/nouns">Nouns with articles</a>
 			</li>
 			<li class:active={$page.url.pathname === '/verbs'}>
 				<a sveltekit:prefetch href="/verbs">Verb forms</a>
+			</li>
+			<li class:active={$page.url.pathname === '/vocabs'}>
+				<a sveltekit:prefetch href="/vocabs">Other Vocabularies</a>
 			</li>
 			<li class:active={$page.url.pathname === '/grammar'}>
 				<a sveltekit:prefetch href="/grammar">Grammar Express</a>
