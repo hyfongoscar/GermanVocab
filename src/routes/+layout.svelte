@@ -14,7 +14,7 @@
 
 <footer>
 	<p>
-		Visit <a href="https://potatohy.github.com">potatohy.github.com</a> for more awesome personal projects.
+		Visit <a href="https://secondwindlabs.github.io">secondwindlabs.github.io</a> for more awesome personal projects.
 	</p>
 </footer>
 
